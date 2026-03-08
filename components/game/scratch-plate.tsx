@@ -189,6 +189,7 @@ export function ScratchPlate({ phrase, onComplete, plateNumber }: ScratchPlatePr
               ref={canvasRef}
               width={plateSize}
               height={plateSize}
+              style={{ touchAction: "none" }}
               className={`absolute inset-0 rounded-full transition-opacity duration-500 ${isRevealed ? "pointer-events-none opacity-0" : "opacity-100"
                 }`}
             />
